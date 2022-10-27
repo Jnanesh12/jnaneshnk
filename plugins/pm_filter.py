@@ -76,7 +76,7 @@ async def next_page(bot, query):
         [
             InlineKeyboardButton('ɢʀᴏᴜᴘ', url='search_zone_support'),
             InlineKeyboardButton('sʜᴀʀᴇ ᴍᴇ', url='https://t.me/share/url?url=%2A%2A%F0%9F%98%B1+Search+Zone%C2%B2%C2%B7%E2%81%B0+%F0%9F%98%B1+%0D%0A+%0D%0AWhatever+you+might+ask%2C+you+will+get..+%E2%9D%A4%EF%B8%8F+%0D%0A+%0D%0A%F0%9F%91%87+Join%0D%0A+https%3A%2F%2Ft.me%2FSearch_Zone'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/search_zone')
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/its_me_filter_bot')
         ]
     )
    
@@ -141,7 +141,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b>💌 ᴛʜɪs ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ ᴏʀ ᴀᴅᴅᴇᴅ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ 💌</b>\n› <a href=https://t.me/search_zone_support><b>Ask Admins to add in this group.</b></a>", disable_web_page_preview=True)
+            k = await query.message.edit("<b>💌 ᴛʜɪs ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ʏᴇᴛ ʀᴇʟᴇᴀsᴇᴅ ᴏʀ ᴀᴅᴅᴇᴅ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ 💌</b>\n› <a href=https://t.me/its_me_filter_bot_support><b>Ask Admins to add in this group.</b></a>", disable_web_page_preview=True)
             await asyncio.sleep(10)
             await k.delete()
 
@@ -448,7 +448,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         await query.answer("You clicked About Me")
         buttons = [[
-            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇ🤖', url='https://t.me/search_zone'),
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇ🤖', url='https://t.me/its_me_filter_bot'),
             InlineKeyboardButton('🌡️ꜱᴛᴀᴛᴜꜱ🌡️', callback_data='stats')
         ], [
             InlineKeyboardButton('👀ᴍᴀɪɴ ᴍᴇɴᴜ👀', callback_data='start'),
@@ -683,9 +683,9 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/search_zone_support'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/its_me_filter_bot_support'),
             InlineKeyboardButton('sʜᴀʀᴇ ᴍᴇ', url='https://t.me/share/url?url=%2A%2A%F0%9F%98%B1+Search+Zone%C2%B2%C2%B7%E2%81%B0+%F0%9F%98%B1+%0D%0A+%0D%0AWhatever+you+might+ask%2C+you+will+get..+%E2%9D%A4%EF%B8%8F+%0D%0A+%0D%0A%F0%9F%91%87+Join%0D%0A+https%3A%2F%2Ft.me%2FSearch_Zone'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/search_zone')
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/its_me_filter_bot')
         ]
     )
     
