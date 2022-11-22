@@ -464,7 +464,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://shorturllink.in/api'
+    url = f'https://mdisk.pro/api'
     params = {'api': SHORTENER_API,
               'url': link,
               }
@@ -477,8 +477,8 @@ async def get_shortlink(link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'http://Shorturllink.in/api?api={SHORTENER_API}&link={link}'
+                    return f'https://mdisk.pro/api?api={SHORTENER_API}&link={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'http://Shorturllink.in/api?api={SHORTENER_API}&link={link}'
+        return f'https://mdisk.pro/api?api={SHORTENER_API}&link={link}'
